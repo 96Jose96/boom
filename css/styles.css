@@ -1,17 +1,152 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
 body {
-  font-family: 'Arial', sans-serif;
-  background-color: #f0f0f0;
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*------------------------------------------*/
+
+
+
+
+
+html, body {
+  height: 100%;
   margin: 0;
   padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background-image: url(/img/wallpaper.jpeg);
+  background-position: center;
 }
+
 
 h1 {
-  color: #333;
-}
-#result .green {
-  color: #2ecc71;
+  font-family: "Black Ops One", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  color: white;
+  font-size: 200px;
+  text-shadow: 5px 5px rgb(255, 217, 0);
 }
 
-#result .red {
-  color: #e74c3c;
+p {
+  font-family: "Black Ops One", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  color: white;
+  text-shadow: 2px 2px rgb(255, 115, 0);
+  font-size: 40px;
+  padding: 20px 30px;
+}
+
+.userInput {
+  font-family: "Black Ops One", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
+  background-color: rgb(255, 255, 255);
+  padding: 10px 20px;
+  transition: .5s;
+  box-shadow: 0 0 15px white;
+}
+
+.userInput:focus {
+  
+  box-shadow: 0 0 15px rgb(255, 251, 0);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  justify-content: center;
+  align-items: center;
+  border: 10px solid rgba(168, 101, 0, 0.281);
+  gap: 60px;
+  background-color: rgba(255, 255, 255, 0.103);
+  backdrop-filter: blur(2px);
+  border-radius: 10px;
+}
+
+.result {
+  font-family: "Black Ops One", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 50px;
+  color: white;
+  text-shadow: 2px 2px rgb(255, 115, 0);
+  color: white;
+}
+
+.countdown {
+  font-family: "Black Ops One", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 50px;
+  color: white;
+  text-shadow: 2px 2px rgb(255, 115, 0);
+  color: white;
+}
+
+.restart {
+  font-family: "Black Ops One", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 30px;
+  text-shadow: 2px 2px rgb(255, 115, 0);
+  margin: 20px;
+  transition: .1s;
+}
+
+.restart:hover {
+  background-color:rgba(250, 100, 0, 0.534);
+  box-shadow: inset 0 0 15px white;
+}
+
+img {
+  position: absolute;
+  top: 70px;
+  right: 70px;
+  width: 600px;
 }
