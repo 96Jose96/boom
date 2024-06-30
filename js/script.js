@@ -30,7 +30,7 @@ function play() {
      if (validateInput(userInput)) {
         timer();
         setTimeout(() => {
-            const comparisonResult = '';
+            const finalResult = '';
             if (userInput == cpuNumber) {
                 result.textContent = '¡Has salvado el mundo!'
                 const gif = document.createElement('img');
@@ -45,7 +45,7 @@ function play() {
                 gifcontainer.appendChild(gif)
             }
             countdown.textContent = `Usuario: ${userInput} - Máquina: ${cpuNumber}`;
-            console.log(comparisonResult);
+            console.log(finalResult);
         }, 6000); // Espera a que el temporizador termine
     } else {
         result.textContent = 'Porfavor, ingrese solo 1, 2 o 3'
